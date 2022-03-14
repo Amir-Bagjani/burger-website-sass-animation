@@ -1,3 +1,4 @@
+@import "config";
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;600&display=swap');
 
 *{
@@ -10,4 +11,29 @@
     border: none;
     text-transform: capitalize;
     transition: all 0.2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 8rem;
+    overflow-x: hidden;
+
+    &::-webkit-scrollbar{
+        width: 1rem;
+    }
+    &::-webkit-scrollbar-track{
+        background: transparent;
+    }
+    &::-webkit-scrollbar-thumb{
+        background-color: $yellow;
+        border-radius: 5rem;
+    }
+}
+
+body{
+    background: url(../../public/images/background.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    overflow-x: hidden;
 }
