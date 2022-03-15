@@ -18,7 +18,7 @@ $border: 0.2rem solid rgba(255, 255, 255, 0.3);
 }
 
 @mixin grid($val) {
- display: grid;
- grid-template-columns: repeat(auto-fit, minmax($val, 1fr));
- gap: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax($val, 1fr));
+  gap: 2rem;
 }
