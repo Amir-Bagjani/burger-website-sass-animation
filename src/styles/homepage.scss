@@ -94,55 +94,86 @@
   }
 }
 
-.about{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 3rem;
-    align-items: center;
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  align-items: center;
 
-    .image{
-        flex: 1 1 40rem;
+  .image {
+    flex: 1 1 40rem;
 
-        img{
-            width: 100%;
-        }
+    img {
+      width: 100%;
+    }
+  }
+
+  .content {
+    flex: 1 1 40rem;
+
+    & > h3 {
+      @include title-text(2.5rem);
     }
 
-    .content{
-        flex: 1 1 40rem;
-
-        & > h3{
-            @include title-text(2.5rem);
-        }
-
-        p{
-            @include grap-text(1.5rem);
-            padding: 2rem 0;
-        }
-
-        .icons{
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1.5rem;
-            margin: 2rem 0;
-
-            h3{
-                flex: 1 1 16rem;
-                @include title-text(1.5rem);
-
-                i{
-                    margin-right: 0.5rem;
-                    color: $yellow;
-                }
-            }
-        }
+    p {
+      @include grap-text(1.5rem);
+      padding: 2rem 0;
     }
+
+    .icons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      margin: 2rem 0;
+
+      h3 {
+        flex: 1 1 16rem;
+        @include title-text(1.5rem);
+
+        i {
+          margin-right: 0.5rem;
+          color: $yellow;
+        }
+      }
+    }
+  }
 }
 
+.reviews {
+  .box-container {
+    @include grid(31rem);
 
+    .box {
+      padding: 2rem;
+      text-align: center;
 
+      img {
+        width: 10rem;
+        height: 10rem;
+        border-radius: 50%;
+        margin-bottom: 1rem;
+      }
 
+      h3 {
+        @include title-text(2rem);
+      }
 
+      p {
+        @include grap-text(1.4rem);
+        padding: 1rem 0;
+      }
+
+      .stars {
+        margin-top: 1rem;
+
+        i {
+          font-size: 1.7rem;
+          color: $yellow;
+        }
+      }
+    }
+  }
+}
 
 
 
@@ -156,11 +187,3 @@
     font-size: 2.5rem;
   }
 }
-
-// @media (max-width: 991px) {
-
-// }
-
-// @media (max-width: 450px) {
-
-// }
