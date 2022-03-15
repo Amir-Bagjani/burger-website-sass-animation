@@ -42,6 +42,7 @@ section {
   padding: 3rem 9%;
 }
 
+//utilities
 .btn{
   display: inline-block;
   margin-top: 1rem;
@@ -57,6 +58,21 @@ section {
     background-color: $white;
   }
 }
+
+.heading{
+  text-align: center;
+  margin-bottom: 3rem;
+
+  h3{
+    @include title-text(3rem);
+    margin-bottom: 1rem;
+  }
+}
+
+
+
+
+
 
 @media (max-width: 1200px) {
   section {

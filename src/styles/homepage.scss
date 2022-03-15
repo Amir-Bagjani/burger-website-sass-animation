@@ -55,6 +55,46 @@
     }
 }
 
+.menu{
+
+    .box-container{
+        @include grid(31rem);
+
+        .box{
+            text-align: center;
+
+            &:hover img{
+                transform: translateY(1rem);
+            }
+
+            img{
+                height: 25rem;
+            }
+
+            .content{
+                padding: 1rem 0;
+
+                .stars{
+                    margin-bottom: 2rem;
+
+                    i{
+                        color: $yellow;
+                        font-size: 1.7rem;
+                    }
+                }
+
+                h3{
+                    @include title-text(3rem);
+                }
+
+                .price{
+                    @include grap-text(1.5rem);
+                }
+            }
+        }
+    }
+}
+
 
 
 @media (max-width: 991px) {
@@ -64,7 +104,7 @@
 }
 @media (max-width: 768px) {
     .home .content h3{
-        font-size: 2.5rem;
+        font-size: 2.5rem; 
     }
 }
 
