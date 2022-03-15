@@ -1,0 +1,144 @@
+@import "config";
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 3rem 9%;
+  background-color: $black;
+
+  .icons {
+    font-size: 2.5rem;
+    cursor: pointer;
+    color: $white;
+
+    &:hover {
+      color: $yellow;
+    }
+  }
+
+  #menu-btn {
+    display: none;
+  }
+
+  .navbar {
+    a {
+      font-size: 2rem;
+      color: $white;
+      margin: 0 2rem;
+
+      &:hover {
+        text-decoration: underline;
+        text-underline-offset: 1rem;
+        color: $yellow;
+      }
+    }
+
+    .space {
+      width: 16rem;
+      display: inline-block;
+    }
+  }
+
+  .logo {
+    position: absolute;
+    top: 3rem;
+    left: 48.5%;
+    transform: translateX(-50%);
+
+    img {
+      width: 15rem;
+    }
+  }
+
+  .search-form {
+    height: 7rem;
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    background-color: $black;
+    border-top: $border;
+    position: absolute;
+    top: 99%;
+    left: 0;
+    width: 100%;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+
+    &.active {
+      clip-path: polygon(0 0%, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    input {
+      width: 100%;
+      background: none;
+      color: $white;
+      text-transform: none;
+      font-size: 1.6rem;
+    }
+  }
+
+  .fa-times {
+    transform: rotate(180deg);
+  }
+}
+
+
+@media (max-width: 1200px) {
+    .header{
+        padding: 3rem;
+    }
+}
+
+@media (max-width: 991px) {
+    html{
+        font-size: 55%;
+    }
+    .header{
+        justify-content: flex-end;
+        gap: 1.5rem;
+
+        #menu-btn{
+            display: inline-block;
+        }
+
+        .navbar{
+            position: absolute;
+            top: 99%;
+            left: 0;
+            width: 100%;
+            background-color: $black;
+            clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+
+            &.active {
+            clip-path: polygon(0 0%, 100% 0, 100% 100%, 0% 100%);
+            }
+
+            a{
+                display: block;
+                margin: 3rem 2rem;
+            }
+
+            .space{
+                display: none;
+            }
+        }
+
+        .logo {
+            transform: translateX(0);
+            left: 2.5rem;
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    html{
+        font-size: 50%;
+    }
+    
+}
