@@ -10,7 +10,7 @@ const MenuSection = () => {
 
         <div className="box-container">
 
-            <div className="box">
+            <div className="box" data-aos="fade-up" >
                 <img src="images/product-1.png" alt="product-1" />
                 <div className="content">
                     <div className="stars">
@@ -26,7 +26,7 @@ const MenuSection = () => {
                 </div>
             </div>
             
-            <div className="box">
+            <div className="box" data-aos="fade-up" >
                 <img src="images/product-2.png" alt="product-2" />
                 <div className="content">
                     <div className="stars">
@@ -42,7 +42,7 @@ const MenuSection = () => {
                 </div>
             </div>
             
-            <div className="box">
+            <div className="box" data-aos="fade-up" >
                 <img src="images/product-3.png" alt="product-3" />
                 <div className="content">
                     <div className="stars">
@@ -58,7 +58,7 @@ const MenuSection = () => {
                 </div>
             </div>
             
-            <div className="box">
+            <div className="box" data-aos="fade-up" >
                 <img src="images/product-4.png" alt="product-4" />
                 <div className="content">
                     <div className="stars">
@@ -74,7 +74,7 @@ const MenuSection = () => {
                 </div>
             </div>
             
-            <div className="box">
+            <div className="box" data-aos="fade-up" >
                 <img src="images/product-5.png" alt="product-5" />
                 <div className="content">
                     <div className="stars">
@@ -90,7 +90,7 @@ const MenuSection = () => {
                 </div>
             </div>
             
-            <div className="box">
+            <div className="box" data-aos="fade-up" >
                 <img src="images/product-6.png" alt="product-6" />
                 <div className="content">
                     <div className="stars">

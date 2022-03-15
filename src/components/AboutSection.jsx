@@ -3,11 +3,11 @@ import React from 'react'
 const AboutSection = () => {
   return (
     <section className='about' id='about'>
-        <div className="image">
+        <div data-aos="fade-right" data-aos-delay="150" className="image">
             <img src="images/about-img.png" alt="about" />
         </div>
 
-        <div className="content">
+        <div data-aos="fade-left" data-aos-delay="150" className="content">
             <h3>step into burger heaven</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati enim perferendis ducimus dignissimos porro nulla reiciendis similique? Dolor maiores facere suscipit assumenda! Nisi inventore corrupti repellat voluptas eum debitis totam.</p>
             <div className="icons">

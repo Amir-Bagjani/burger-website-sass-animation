@@ -10,7 +10,7 @@ const ReviewsSection = () => {
 
         <div className="box-container">
 
-            <div className="box">
+            <div data-aos="zoom-in" data-aos-delay="150" className="box">
                 <img src="images/pic-1.png" alt="customer" />
                 <h3>john doe</h3>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate commodi debitis tempora, nam accusantium aliquid quo consectetur. Exercitationem, nobis tempora!</p>
@@ -23,7 +23,7 @@ const ReviewsSection = () => {
                 </div>
             </div>
 
-            <div className="box">
+            <div data-aos="zoom-in" data-aos-delay="150" className="box">
                 <img src="images/pic-2.png" alt="customer" />
                 <h3>john doe</h3>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate commodi debitis tempora, nam accusantium aliquid quo consectetur. Exercitationem, nobis tempora!</p>
@@ -36,7 +36,7 @@ const ReviewsSection = () => {
                 </div>
             </div>
 
-            <div className="box">
+            <div data-aos="zoom-in" data-aos-delay="150" className="box">
                 <img src="images/pic-3.png" alt="customer" />
                 <h3>john doe</h3>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate commodi debitis tempora, nam accusantium aliquid quo consectetur. Exercitationem, nobis tempora!</p>
