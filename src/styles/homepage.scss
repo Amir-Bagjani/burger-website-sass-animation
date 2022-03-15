@@ -1,111 +1,160 @@
 @import "config";
 
-.home{
-    margin-top: 7rem;
-    background: url(../../public/images/home-bg.png) no-repeat;
-    background-position: center;
-    background-size: contain;
+.home {
+  margin-top: 7rem;
+  background: url(../../public/images/home-bg.png) no-repeat;
+  background-position: center;
+  background-size: contain;
 
-    .content{
-        max-width: 70rem;
-        text-align: center;
-        margin: 0 auto;
+  .content {
+    max-width: 70rem;
+    text-align: center;
+    margin: 0 auto;
+
+    img {
+      width: 100%;
+    }
+
+    h3 {
+      @include title-text(4rem);
+    }
+
+    p {
+      @include grap-text(1.7rem);
+      padding: 2rem 0;
+    }
+  }
+}
+
+.service {
+  @include grid(31rem);
+
+  .box {
+    text-align: center;
+    padding: 2rem;
+
+    i {
+      height: 7rem;
+      width: 7rem;
+      line-height: 7rem;
+      font-size: 2.5rem;
+      color: $black;
+      background-color: $yellow;
+      margin-bottom: 1rem;
+      border-radius: 50%;
+    }
+
+    h3 {
+      @include title-text(2rem);
+      padding: 1rem 0;
+    }
+
+    p {
+      @include grap-text(1.5rem);
+    }
+  }
+}
+
+.menu {
+  .box-container {
+    @include grid(31rem);
+
+    .box {
+      text-align: center;
+
+      &:hover img {
+        transform: translateY(1rem);
+      }
+
+      img {
+        height: 25rem;
+      }
+
+      .content {
+        padding: 1rem 0;
+
+        .stars {
+          margin-bottom: 2rem;
+
+          i {
+            color: $yellow;
+            font-size: 1.7rem;
+          }
+        }
+
+        h3 {
+          @include title-text(3rem);
+        }
+
+        .price {
+          @include grap-text(1.5rem);
+        }
+      }
+    }
+  }
+}
+
+.about{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    align-items: center;
+
+    .image{
+        flex: 1 1 40rem;
 
         img{
             width: 100%;
         }
+    }
 
-        h3{
-            @include title-text(4rem);
+    .content{
+        flex: 1 1 40rem;
+
+        & > h3{
+            @include title-text(2.5rem);
         }
 
         p{
-            @include grap-text(1.7rem);
-            padding:2rem 0;
-        }
-    }
-}
-
-.service{
-    @include grid(31rem);
-
-    .box{
-        text-align: center;
-        padding: 2rem;
-
-        i{
-            height: 7rem;
-            width: 7rem;
-            line-height: 7rem;
-            font-size: 2.5rem;
-            color: $black;
-            background-color: $yellow;
-            margin-bottom: 1rem;
-            border-radius: 50%;
+            @include grap-text(1.5rem);
+            padding: 2rem 0;
         }
 
-        h3{
-            @include title-text(2rem);
-            padding: 1rem 0;
-        }
+        .icons{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            margin: 2rem 0;
 
-        p{
-            @include grap-text(1.5rem)
-        }
-    }
-}
+            h3{
+                flex: 1 1 16rem;
+                @include title-text(1.5rem);
 
-.menu{
-
-    .box-container{
-        @include grid(31rem);
-
-        .box{
-            text-align: center;
-
-            &:hover img{
-                transform: translateY(1rem);
-            }
-
-            img{
-                height: 25rem;
-            }
-
-            .content{
-                padding: 1rem 0;
-
-                .stars{
-                    margin-bottom: 2rem;
-
-                    i{
-                        color: $yellow;
-                        font-size: 1.7rem;
-                    }
-                }
-
-                h3{
-                    @include title-text(3rem);
-                }
-
-                .price{
-                    @include grap-text(1.5rem);
+                i{
+                    margin-right: 0.5rem;
+                    color: $yellow;
                 }
             }
         }
     }
 }
+
+
+
+
+
 
 
 
 @media (max-width: 991px) {
-    .home {
-        background-size: cover;
-    }
+  .home {
+    background-size: cover;
+  }
 }
 @media (max-width: 768px) {
-    .home .content h3{
-        font-size: 2.5rem; 
-    }
+  .home .content h3 {
+    font-size: 2.5rem;
+  }
 }
 
 // @media (max-width: 991px) {
