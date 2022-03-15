@@ -175,7 +175,77 @@
   }
 }
 
+.contact {
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
 
+    .map {
+      flex: 1 1 40rem;
+    }
+
+    .form {
+      flex: 1 1 40rem;
+
+      .icon-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        margin-bottom: 3rem;
+
+        .icon {
+          flex: 1 1 17rem;
+          text-align: center;
+
+          i {
+            height: 6rem;
+            width: 6rem;
+            line-height: 6rem;
+            background-color: $yellow;
+            color: $black;
+            border-radius: 50%;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+          }
+
+          h3 {
+            margin: 1rem 0;
+            @include title-text(2rem);
+          }
+
+          p {
+            @include grap-text(1.5rem);
+          }
+        }
+      }
+
+      form {
+        text-align: center;
+
+        .box {
+          width: 100%;
+          border: $border;
+          padding: 1.2rem 1.4rem;
+          color: $white;
+          background: none;
+          font-size: 1.6rem;
+          text-transform: none;
+          margin: 0.7rem 0;
+
+          &:focus {
+            border-color: $yellow;
+          }
+        }
+
+        textarea {
+          height: 15rem;
+          resize: none;
+        }
+      }
+    }
+  }
+}
 
 @media (max-width: 991px) {
   .home {
