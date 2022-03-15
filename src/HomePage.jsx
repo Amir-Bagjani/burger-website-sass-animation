@@ -1,4 +1,5 @@
 import AboutSection from "./components/AboutSection.jsx";
+import BlogsSection from "./components/BlogsSection.jsx";
 import ContactSection from "./components/ContactSection.jsx";
 import HomeSection from "./components/HomeSection.jsx";
 import MenuSection from "./components/MenuSection.jsx";
@@ -16,6 +17,7 @@ const HomePage = () => {
       <AboutSection />
       <ReviewsSection />
       <ContactSection />
+      <BlogsSection />
     </>
   );
 };

@@ -6,9 +6,7 @@ const Navbar = () => {
   const [open, setOpen] = useState("");
 
   useEffect(() => {
-    window.addEventListener(`scroll`, () => {
-      setOpen("");
-    });
+    window.addEventListener(`scroll`, () => {setOpen("")});
 
     return () => window.removeEventListener(`scroll`);
   }, []);
